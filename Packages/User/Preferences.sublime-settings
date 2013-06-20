@@ -17,5 +17,20 @@
 		"Vintage"
 	],
 	"line_padding_bottom": 0,
-	"line_padding_top": 0
+	"line_padding_top": 0,
+	"folder_exclude_patterns":
+    [
+        ".git",
+        "__pycache__",
+        "env",
+        "env3"
+    ],
+    "file_exclude_patterns":
+    [
+        ".gitignore",
+        ".gitattributes",
+        ".DS_Store",
+        "*.pid",
+        "*.pyc"
+    ]
 }
