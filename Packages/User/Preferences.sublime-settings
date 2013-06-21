@@ -1,8 +1,23 @@
 {
 	"auto_complete": false,
 	"caret_style": "solid",
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"file_exclude_patterns":
+	[
+		".gitignore",
+		".gitattributes",
+		".DS_Store",
+		"*.pid",
+		"*.pyc"
+	],
 	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"__pycache__",
+		"env",
+		"env3"
+	],
 	"font_face": "Ubuntu Mono",
 	"font_options":
 	[
@@ -17,20 +32,5 @@
 		"Vintage"
 	],
 	"line_padding_bottom": 0,
-	"line_padding_top": 0,
-	"folder_exclude_patterns":
-    [
-        ".git",
-        "__pycache__",
-        "env",
-        "env3"
-    ],
-    "file_exclude_patterns":
-    [
-        ".gitignore",
-        ".gitattributes",
-        ".DS_Store",
-        "*.pid",
-        "*.pyc"
-    ]
+	"line_padding_top": 0
 }
