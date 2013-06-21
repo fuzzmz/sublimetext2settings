@@ -1,0 +1,33 @@
+{ "name": "BUP",
+  "scopeName": "text.bup",
+  "fileTypes": ["bup"],
+  "patterns": [
+  {   "match": "\\#.*$",
+      "name": "comment.text.bup",
+      "comment": "comment lines starting with #"
+  },
+
+  {   "match": "(\\[.*?\\])",
+      "name": "keyword.text.bup",
+      "comment": "Variables like ${PARAM1}, ${TM_SELECTION}..."
+  },
+
+  {   "match": "UsvDELETE|UsvDIRCOPY|UsvPACKAGE|UsvMKDIR|UsvFILECOPY|(U)(s)(v)(I)(F)(.)|UsvREPLACE|UsvREMOVELINES|UsvAPPENDLINES|UsvAPPENDINLINE|UsvRENAME|UsvPROCCMDLINE|UsvMoveJars|UsvDirUNZIPQ|UsvDirZIPQ|UsvJARSIGNFile|UsvUNZIPQ|UsvZIPQ|UsvDELFILE|UsvUNTARTGZ|UsvUNTARBZ2",
+      "name": "support.function.bup"
+  },
+
+  {   "match": "\\$UsvDELETE|\\$UsvDIRCOPY|\\$UsvPACKAGE|\\$UsvMKDIR|\\$UsvFILECOPY|\\$UsvIF|\\$UsvIFF|\\$UsvREPLACE|\\$UsvREMOVELINES|\\$UsvAPPENDLINES|\\$UsvAPPENDINLINE|\\$UsvRENAME|\\$UsvPROCCMDLINE|\\$UsvMoveJars|\\$UsvDirUNZIPQ|\\$UsvDirZIPQ|\\$UsvJARSIGNFile|\\$UsvUNZIPQ|\\$UsvZIPQ|\\$UsvDELFILE|\\$UsvUNTARTGZ|\\$UsvUNTARBZ2",
+      "name": "string.function.bup"
+  },
+
+  {   "match": "=",
+      "name": "keyword.function.bup"
+  },
+
+  {   "match": "varsimport|import",
+      "name": "keyword.function.bup"
+  }
+
+  ],
+  "uuid": "bd9c3e31-6c91-4cd4-bb7a-b228921e2d6a"
+}

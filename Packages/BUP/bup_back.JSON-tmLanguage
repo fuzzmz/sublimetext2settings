@@ -1,0 +1,44 @@
+{ "name": "BUP",
+  "scopeName": "text.bup",
+  "fileTypes": ["bup"],
+  "patterns": [
+	{	"match": "\\$(\\d+)",
+    	"name": "keyword.bup",
+		"captures": {
+			             "1": { "name": "constant.numeric.ssraw" }
+		            },
+		"comment": "Tab stops like $1, $2..."
+  },
+
+  { 	"match": "\\$[A-Za-z][A-Za-z0-9_]+",
+  		"name": "keyword.text.bup",
+  		"comment": "Variables like $PARAM1, $TM_SELECTION..."
+	},
+
+  {   "match": "\\#.*$",
+      "name": "comment.text.bup",
+      "comment": "comment lines starting with #"
+  },
+
+  {   "match": "(\\$)(\\{)((?:[a-z][a-z]+))(\\})",
+      "name": "keyword2.text.bup",
+      "comment": "Variables like ${PARAM1}, ${TM_SELECTION}..."
+  },
+
+	{ 	"name": "variable.complex.bup",
+   		"begin": "(\\$)(\\{)([0-9]+):",
+   		"beginCaptures": {
+       		"1": { "name": "keyword.bup" },
+       		"3": { "name": "constant.numeric.bup" }
+   		},
+   		"patterns": [
+       		{ "include": "$self" },
+       		{  "name": "string.bup",
+          		"match": "."
+       		}
+   		],
+   		"end": "\\}"
+	}
+  ],
+  "uuid": "bd9c3e31-6c91-4cd4-bb7a-b228921e2d6a"
+}
