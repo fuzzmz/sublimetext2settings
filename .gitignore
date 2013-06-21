@@ -1,4 +1,4 @@
-**/*.last-run
-**/*.pyc
-**/*.cache
+*.last-run
+*.cache
+*.pyc
 Settings/
